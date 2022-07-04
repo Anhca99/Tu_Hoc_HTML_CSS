@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box{
+    background-color: orange;
+    height: 100px;
+    /* cách 4 */
+    position: relative;
+}
+
+h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* top là translateY(-50%) còn left translateX(-50%)
+    còn nếu dùng right: 50%; thì translateX(50%) */
+    /* transform: translateX(-50%) translateY(-50%); */
+    /* Viết gọn cho cái trên X,Y */
+    transform: translate(-50% , -50%);
+}
