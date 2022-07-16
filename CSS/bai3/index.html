@@ -6,38 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box{
-            width: 60px;
-            height: 60px;
-            color: #fff;
-            /* ba lệnh dưới này căn giữa 3 chữ box
-            lưu ý: phải có display: flex; mới sử dụng được 2 cái cuối */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .box1{
-            background-color: black;
+        html,body{
+            margin: 0;
         }
 
-        .box2{
-            background-color: orange;
-        }
-        
-        .box3{
-            background-color: firebrick;
-            padding: 10px;
-            /* boder chiều dài viền của 1 bức ảnh hay một ô vuông gì đó */
-            border-width: 10px;
-            /* border-style: dashed; "dashed" là nét đứt
-            border-style: solid; "solid" là nét liền */
-            border-style: solid;
+        .header{
+            width: 100%;
+            height: 100vh;
+            background: url(https://i.pinimg.com/564x/02/55/b9/0255b99f2eaffe7f2d0cc3ea10137806.jpg) no-repeat center / contain;
+            /* Viết ngắn gon bằng css Background shorthand */
+            /* background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center; */
         }
     </style>
 </head>
 <body>
-    <div class="box box1">Box 1</div>
-    <div class="box box2">Box 2</div>
-    <div class="box box3">Box 3</div>
+    <div class="header"></div>
 </body>
 </html>
